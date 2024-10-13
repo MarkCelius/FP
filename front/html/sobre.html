@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Interactivo</title>
+    <!-- Incluye Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.sobre.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="text-center">
+    <h1 id="hbd" class="mt-5">Happy Birthday, My Star</h1>
+
+    <div class="sobre-container">
+        <!-- Imagen del sobre (frente y atrás) -->
+        <img src="../img/sobre-cerrado.jpeg" class="sobre" id="frente" alt="Sobre Cerrado">
+        <img src="../img/sobre-atras.jpeg" class="sobre" id="atras" alt="Sobre Atrás" style="display: none;">
+        
+        <!-- Imagen del sello -->
+        <img src="../img/sello.png" class="sello" alt="Sello">
+        
+        <!-- Botón en forma de flecha para voltear -->
+        <button id="flip-btn" class="flecha">&#x21C4;</button> <!-- Flecha para voltear -->
+    </div>
+
+    <!-- Contenedor para la carta y las imágenes adicionales -->
+    <div class="imagen-container" style="display: none;">
+        <img src="../img/carta.jpeg" class="zoomable" alt="Carta" id="carta">
+        <img src="../img/calabazapau.jpeg" class="zoomable" alt="Calabazapau" id="imagen1">
+        <img src="../img/fantasmalen.jpeg" class="zoomable" alt="Fantasmalen" id="imagen2">
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/sello.js"></script>
+    <script src="../js/flip.js"></script>
+
+</body>
+</html>

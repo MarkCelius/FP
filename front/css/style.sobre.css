@@ -1,0 +1,135 @@
+body{
+    font-family: monospace;
+    background-color: #d0c8a9; 
+}
+
+
+.sobre-container {
+    position: relative;
+    width: 400px; 
+    margin: 50px auto;
+    
+}
+
+img {
+
+    border-radius: 10px;
+}
+
+.sobre {
+    width: 100%;
+    height: auto;
+}
+
+.sello {
+    position: absolute;
+    bottom: 60px;  
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px; 
+    height: auto;
+    cursor: pointer;
+}
+
+#flip-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.imagen-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 180px;
+}
+
+.zoomable {
+    width: 200px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.zoomable:hover {
+    transform: scale(1.1); 
+}
+
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.pixel-border {
+    border: 4px solid #a59658; 
+    box-shadow: 0px 0px 0px 4px #d0c8a9, 
+                0px 0px 0px 8px #a59658; 
+}
+
+.swal2-popup {
+    background-color: #f5f0e1; 
+    font-family: 'Press Start 2P', cursive;
+}
+
+.swal2-confirm {
+    background-color: #a59658; 
+    border: 2px solid #d0c8a9; 
+    color: #f5f0e1; 
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.swal2-cancel {
+    background-color: #e6d3a3; 
+    border: 2px solid #8b5e3c; 
+    color: #8b5e3c; 
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.swal2-confirm:hover {
+    background-color: #704a2e; 
+}
+
+.swal2-cancel:hover {
+    background-color: #d2b489;
+}
+
+h1{
+    font-family: 'Press Start 2P';
+}
