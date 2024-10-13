@@ -33,8 +33,9 @@ $(document).ready(function() {
                     $('#hbd').hide();
                     $('.sello').hide();
                     
-                    // Mostrar las imágenes
-                    $('.imagen-container').show();
+                    
+                    $('.inside').show();
+
                 } else {
                     // Usar SweetAlert2 para mostrar un mensaje de acceso denegado
                     Swal.fire({

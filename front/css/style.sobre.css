@@ -1,6 +1,8 @@
 body{
-    font-family: monospace;
-    background-color: #d0c8a9; 
+    font-family: 'Press Start 2P', cursive;
+    background-color: #d0c8a9;
+    padding-bottom: 50px;  /* Ajusta según la cantidad de espacio que desees */
+ 
 }
 
 
@@ -132,4 +134,74 @@ img {
 
 h1{
     font-family: 'Press Start 2P';
+}
+
+.playlist-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    /* Puedes ajustar el tamaño general de la playlist aquí */
+}
+
+.playlist-container iframe {
+    width: 80%;  /* Ajusta el ancho según sea necesario */
+    max-width: 600px; /* Limita el ancho máximo si deseas */
+    background-color: #e6d3b1; /* Fondo color beige */
+}
+
+.collapsible-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto; /* Para centrarlo y darle espacio vertical */
+}
+
+.collapsible {
+    background-color: #6b4f3f;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background-color: #8c6b5b;
+}
+
+.content {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.back-to-top-container {
+    margin-top: 20px;  /* Da espacio para que no quede muy cerca del colapsable */
+    text-align: center;  /* Centra el botón */
+}
+
+.back-to-top-button {
+    padding: 10px 20px;
+    background-color: #d1a287;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top-button:hover {
+    background-color: #8c6b5b;
+}
+
+#letraC{
+    font-size: small;
 }
